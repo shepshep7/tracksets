@@ -30,7 +30,7 @@ Before submitting to app stores, confirm the custom domain serves a valid HTTPS 
 curl.exe -I https://trackset.net/
 ```
 
-The current DNS apex records point at GitHub Pages (`185.199.108.153` through `185.199.111.153`, plus the matching `2606:50c0:*::153` IPv6 records), but the certificate must also be provisioned for `trackset.net`. If `curl` reports `SEC_E_WRONG_PRINCIPAL` or a hostname mismatch, open the repository's GitHub Pages settings, wait for the custom-domain certificate to finish provisioning, and enable Enforce HTTPS before using the Store submission URLs.
+The DNS apex records should point at GitHub Pages (`185.199.108.153` through `185.199.111.153`, plus the matching `2606:50c0:*::153` IPv6 records), and the certificate must be provisioned for `trackset.net`. If `curl` reports `SEC_E_WRONG_PRINCIPAL` or a hostname mismatch, open the repository's GitHub Pages settings, wait for the custom-domain certificate to finish provisioning, and enable Enforce HTTPS before using the Store submission URLs.
 
 ## Store notes
 
